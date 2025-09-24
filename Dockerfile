@@ -2,9 +2,12 @@ FROM python:3.6.4-slim
 
 ENV PYTHONUNBUFFERED 1
 
+# Create working directory
 RUN mkdir /app
 WORKDIR /app
 
-COPY ..
+# Copy everything from current folder to /app
+COPY . /app
 
-RUN pip3 install -r requirements.txt
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
