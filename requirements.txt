@@ -1,7 +1,7 @@
 asgiref==3.9.2
 certifi==2025.8.3
 charset-normalizer==3.4.3
-Django==3.1.12
+Django>=4.3
 djangorestframework==3.15.1
 gunicorn==23.0.0
 idna==3.10
@@ -11,3 +11,5 @@ pytz==2025.2
 requests==2.32.5
 sqlparse==0.2.4
 urllib3==2.5.0
+
+
