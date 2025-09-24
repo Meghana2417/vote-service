@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Copy everything in vote/ to /app
-COPY . /app
+COPY vote /app
 
 # Upgrade pip
 RUN pip install --upgrade pip
